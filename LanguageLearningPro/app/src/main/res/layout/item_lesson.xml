@@ -1,8 +1,8 @@
-<!-- activity_lesson.xml -->
+<!-- item_lesson.xml -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -13,11 +13,5 @@
         android:textSize="18sp"
         android:text="Lesson Title" />
 
-    <TextView
-        android:id="@+id/lessonContent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lesson Content Goes Here" />
-
-    <!-- You can add more views as needed for your lesson content -->
+    <!-- Add more views as needed (e.g., lesson description, progress indicator) -->
 </LinearLayout>
