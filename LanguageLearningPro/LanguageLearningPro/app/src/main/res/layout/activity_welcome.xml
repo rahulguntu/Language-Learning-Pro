@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:gravity="center">
 
+    
     <ImageView
         android:id="@+id/logoImage"
         android:layout_width="270dp"
