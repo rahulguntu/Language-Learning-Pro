@@ -23,6 +23,7 @@ public class ExerciseActivity extends AppCompatActivity {
         radioGroup = findViewById(R.id.radioGroup);
         btnSubmit = findViewById(R.id.btnSubmit);
 
+       
         // Populate exercise content and answer choices based on the selected exercise
 
         btnSubmit.setOnClickListener(new View.OnClickListener() {
