@@ -5,6 +5,31 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <ImageButton
+        android:id="@+id/backB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:padding="8dp"
+        android:src="@drawable/ic_back"
+        />
+
+
+    <TextView
+        android:id="@+id/registrationTitleTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/textPurple"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="50dp"
+        android:textAllCaps="true"
+        android:text="Register"/>
+
     <!-- Input fields -->
     <EditText
         android:id="@+id/etName"

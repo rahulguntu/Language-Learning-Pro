@@ -1,7 +1,0 @@
-<!-- activity_lesson_list.xml -->
-<androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    layout_height=""
-    layout_width=""
-    xmlns:android="http://schemas.android.com/apk/res/android" />

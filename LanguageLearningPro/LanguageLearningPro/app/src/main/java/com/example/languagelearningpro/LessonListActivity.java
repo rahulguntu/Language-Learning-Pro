@@ -1,5 +1,10 @@
 package com.example.languagelearningpro;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -15,6 +20,31 @@ public class LessonListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson_list);
 
+        TextView titleListLessons = findViewById(R.id.titleListLessons);
+
+        Intent intent = getIntent();
+        String emailFromReg = "";
+
+        if (intent != null){
+
+            emailFromReg = intent.getStringExtra("selectedLanguage");
+
+        }
+
+        titleListLessons.setText(emailFromReg + " Exercises");
+
+        ImageButton backButton = (ImageButton)findViewById(R.id.backB);
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent goToLoginActivity = new Intent(v.getContext(), LanguageSelectionActivity.class);
+                v.getContext().startActivity(goToLoginActivity);
+
+            }
+        });
+
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -22,6 +52,12 @@ public class LessonListActivity extends AppCompatActivity {
         List<Exercise> exerciseList = new ArrayList<>();
         exerciseList.add(new Exercise("Exercise 1", "Description 1"));
         exerciseList.add(new Exercise("Exercise 2", "Description 2"));
+        exerciseList.add(new Exercise("Exercise 3", "Description 3"));
+        exerciseList.add(new Exercise("Exercise 4", "Description 4"));
+        exerciseList.add(new Exercise("Exercise 5", "Description 5"));
+        exerciseList.add(new Exercise("Exercise 6", "Description 6"));
+        exerciseList.add(new Exercise("Exercise 7", "Description 7"));
+        exerciseList.add(new Exercise("Exercise 8", "Description 8"));
 // Add more exercises as needed
 
 // Initialize the adapter with the list of exercises

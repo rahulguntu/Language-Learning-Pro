@@ -13,6 +13,9 @@
         android:theme="@style/Theme.LanguageLearningPro"
         tools:targetApi="31">
         <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
             android:name=".WelcomeActivity"
             android:exported="true">
             <intent-filter>
@@ -21,30 +24,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".RegistrationActivity"/>
-        <activity
-            android:name=".LoginActivity"/>
-        <activity
-            android:name=".LanguageSelectionActivity"/>
-        <activity
-            android:name=".LessonListActivity"/>
-        <activity
-            android:name=".LessonActivity"/>
-        <activity
-            android:name=".ExerciseListActivity"/>
-        <activity
-            android:name=".ExerciseActivity"/>
-        <activity
-            android:name=".ProgressDashboardActivity"/>
-        <activity
-            android:name=".PostDetailActivity"/>
-        <activity
-            android:name=".ForumHomeActivity"/>
-        <activity
-            android:name="ForumCategoryActivity"/>
-
-
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".LanguageSelectionActivity" />
+        <activity android:name=".LessonListActivity" />
+        <activity android:name=".LessonActivity" />
+        <activity android:name=".ExerciseListActivity" />
+        <activity android:name=".ExerciseActivity" />
+        <activity android:name=".ProgressDashboardActivity" />
+        <activity android:name=".PostDetailActivity" />
+        <activity android:name=".ForumHomeActivity" />
+        <activity android:name=".ForumCategoryActivity" />
     </application>
 
 </manifest>

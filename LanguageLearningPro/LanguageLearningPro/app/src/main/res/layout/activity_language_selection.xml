@@ -1,0 +1,187 @@
+<!-- activity_language_selection.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:padding="8dp"
+            android:src="@drawable/ic_back"
+            />
+
+        <TextView
+            android:id="@+id/titleSelectLanguages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose A Language"
+            android:textStyle="bold|italic"
+            android:textColor="@color/textPurple"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="16dp"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+    <!-- List of available languages -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center">
+
+        <!--adding a radio button -->
+        <RadioButton
+            android:id="@+id/english"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:padding="2dp"
+            android:text="English"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <!--adding a radio button -->
+        <RadioButton
+            android:id="@+id/spanish"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:padding="2dp"
+            android:text="Spanish"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <!--adding a radio button -->
+        <RadioButton
+            android:id="@+id/french"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:padding="2dp"
+            android:text="French"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/german"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:padding="2dp"
+            android:text="German"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/chinese"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:padding="2dp"
+            android:text="Chinese"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/arabic"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:padding="2dp"
+            android:text="Arabic"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/hindi"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:padding="2dp"
+            android:text="Hindi"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+
+        <RadioButton
+            android:id="@+id/bengali"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:padding="2dp"
+            android:text="Bengali"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+
+        <RadioButton
+            android:id="@+id/portuguese"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:padding="2dp"
+            android:text="Portuguese"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/japanese"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:padding="2dp"
+            android:text="Japanese"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/turkish"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:padding="2dp"
+            android:text="Turkish"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+
+    <!-- Continue button -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:id="@+id/btnContinue"
+        android:layout_gravity="center"
+        android:padding="8dp"/>
+</LinearLayout>
