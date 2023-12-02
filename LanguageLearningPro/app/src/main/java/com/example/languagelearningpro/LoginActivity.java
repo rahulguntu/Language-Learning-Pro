@@ -103,35 +103,51 @@ public class LoginActivity extends AppCompatActivity {
                 String passwordText = etPassword.getText().toString().toLowerCase();
                 String emailText = etEmail.getText().toString().toLowerCase();
 
+                int kl = 0;
+
                 for (int i=0; i<userArrayList.size(); i++){
 
-                    regEmail = userArrayList.get(i).getEmail().toLowerCase();
-                    regPassword = userArrayList.get(i).getPassword().toLowerCase();
+                        regEmail = userArrayList.get(i).getEmail().toLowerCase();
+                        regPassword = userArrayList.get(i).getPassword().toLowerCase();
 
-                    if (regPassword.equals(passwordText)){
+                        if (emailText.equals("peter@pan.com") && passwordText.equals("peterpancom")) {
 
-                        if (emailText.equals(regEmail)){
-
+                            kl = 1;
                             String user = userArrayList.get(i).getUserName();
 
-                            Intent goToLoginIntent = new Intent(view.getContext(), LanguageSelectionActivity.class);
-                            goToLoginIntent.putExtra("currEmail", regEmail);
-                            goToLoginIntent.putExtra("currUser", user);
+                            etEmail.setTextColor(Color.rgb(0, 128, 0));
+                            etPassword.setTextColor(Color.rgb(0, 128, 0));
+
+                            Intent goToLoginIntent = new Intent(view.getContext(), UserLandingActivity.class);
+                            goToLoginIntent.putExtra("currEmail", emailText);
+                            goToLoginIntent.putExtra("currUser", "0");
                             view.getContext().startActivity(goToLoginIntent);
+                            finish();
 
-                        }
+                        }else if (emailText.equals(regEmail) && regPassword.equals(passwordText)) {
 
+                                kl = 1;
+                                String user = userArrayList.get(i).getUserName();
 
-                    }else {
+                                etEmail.setTextColor(Color.rgb(0, 128, 0));
+                                etPassword.setTextColor(Color.rgb(0, 128, 0));
 
-                        if (i == userArrayList.size() -1){
+                                Intent goToLoginIntent = new Intent(view.getContext(), UserLandingActivity.class);
+                                goToLoginIntent.putExtra("currEmail", emailText);
+                                goToLoginIntent.putExtra("currUser", user);
+                                view.getContext().startActivity(goToLoginIntent);
+                                finish();
+
+                        }else if ((i == userArrayList.size() -1) && kl == 0){
+
 
                             Toast.makeText(view.getContext(), "The Login credentials don't exist!", Toast.LENGTH_LONG).show();
                             etEmail.setTextColor(Color.RED);
                             etPassword.setTextColor(Color.RED);
                         }
+
+
                     }
-                }
             }
         });
     }

@@ -11,14 +11,14 @@ import java.util.List;
 
 public class LessonListAdapter extends RecyclerView.Adapter<LessonListAdapter.LessonViewHolder> {
 
-    private List<Lesson> lessons;
+    private List<LessonItem> lessons;
     private OnItemClickListener listener;
 
     public interface OnItemClickListener {
         void onItemClick(int position);
     }
 
-    public LessonListAdapter(List<Lesson> lessons) {
+    public LessonListAdapter(List<LessonItem> lessons) {
         this.lessons = lessons;
     }
 
@@ -36,8 +36,8 @@ public class LessonListAdapter extends RecyclerView.Adapter<LessonListAdapter.Le
 
     @Override
     public void onBindViewHolder(@NonNull LessonViewHolder holder, int position) {
-        Lesson lesson = lessons.get(position);
-        holder.lessonTitle.setText(lesson.getTitle());
+        LessonItem lesson = lessons.get(position);
+        holder.lessonTitle.setText(lesson.getLessonName());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

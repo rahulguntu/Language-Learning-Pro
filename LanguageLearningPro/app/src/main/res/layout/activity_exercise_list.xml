@@ -1,0 +1,62 @@
+<!-- activity_exercise_list.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/backB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:padding="8dp"
+            android:src="@drawable/ic_back"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            />
+
+        <TextView
+            android:id="@+id/titleListExercises"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English Lessons"
+            android:capitalize="words"
+            android:textStyle="bold|italic"
+            android:textColor="@color/textPurple"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/backB"
+            android:textSize="30sp"/>
+
+        <ImageButton
+            android:id="@+id/logOutBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_alignParentEnd="true"
+            android:background="?attr/selectableItemBackground"
+            android:padding="8dp"
+            android:src="@drawable/ic_logout"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        layout_height=""
+        layout_width=""
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+
+</LinearLayout>

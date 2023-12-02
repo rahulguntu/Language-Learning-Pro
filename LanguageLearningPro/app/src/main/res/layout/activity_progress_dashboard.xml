@@ -1,0 +1,216 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/progressDashboardTopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/backB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:padding="8dp"
+            android:src="@drawable/ic_back"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            />
+
+        <TextView
+            android:id="@+id/titleListExercises"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Progress"
+            android:capitalize="words"
+            android:textStyle="bold|italic"
+            android:textColor="@color/textPurple"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/backB"
+            android:textSize="30sp"/>
+
+        <ImageButton
+            android:id="@+id/logOutBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_alignParentEnd="true"
+            android:background="?attr/selectableItemBackground"
+            android:padding="8dp"
+            android:src="@drawable/ic_logout"/>
+
+        <TextView
+            android:id="@+id/currentUserTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="user: peter@gmail.com"
+            android:capitalize="none"
+            android:textStyle="bold|italic"
+            android:textColor="@color/textPurple"
+            android:layout_marginLeft="70dp"
+            android:layout_below="@id/titleListExercises"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@+id/progressDashboardTopLayout">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/applesCard"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_margin="8dp"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:elevation="12dp"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/applesImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@drawable/congratulations"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/apples_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="Apples"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/applesImage"/>
+
+
+                <TextView
+                    android:id="@+id/priceTagApples"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Price per Kg: $ "
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="italic|bold"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/apples_name" />
+
+                <TextView
+                    android:id="@+id/priceAmountApples"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:paddingBottom="5dp"
+                    android:text=" 13.69"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="italic|bold"
+                    android:layout_below="@+id/apples_name"
+                    android:layout_alignParentRight="true"
+                    android:layout_toEndOf="@+id/priceTagApples"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/grapesCard"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_margin="8dp"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:elevation="12dp"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/grapesImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@drawable/congratulations"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/grapes_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="Grapes"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/grapesImage"/>
+
+
+                <TextView
+                    android:id="@+id/priceTagGrapes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Price per Kg: $ "
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="italic|bold"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/grapes_name" />
+
+                <TextView
+                    android:id="@+id/priceAmountGrapes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:paddingBottom="5dp"
+                    android:text=" 19.99"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="italic|bold"
+                    android:layout_below="@+id/grapes_name"
+                    android:layout_alignParentRight="true"
+                    android:layout_toEndOf="@+id/priceTagGrapes"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

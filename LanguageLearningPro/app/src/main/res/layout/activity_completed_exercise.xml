@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/congratsLayout">
+
+    <TextView
+        android:id="@+id/congratsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exercise completed! You scored"
+        android:textAlignment="center"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/textPurple"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="30sp"/>
+
+    <ImageView
+        android:id="@+id/congratsImage"
+        android:src="@drawable/congratulations"
+        android:layout_below="@+id/congratsTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_width="500dp"
+        android:layout_height="500dp"/>
+
+    <TextView
+        android:id="@+id/exerciseNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="80%"
+        android:textStyle="bold|italic"
+        android:textColor="@color/textPurple"
+        android:layout_below="@id/congratsImage"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"/>
+
+</RelativeLayout>
