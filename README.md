@@ -1,5 +1,6 @@
 <--------------------- ReadMe File For Language Learning Pro Mobile App -------------->
 
+
 Step 1: 
 	Get the folder that has the project. This can be accessed through git clone or downloading the folder to the local file system which already has android studio installed.
 
